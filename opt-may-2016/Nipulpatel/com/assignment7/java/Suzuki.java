@@ -8,12 +8,15 @@
  ***************************************************************/
 package com.assignment7.java;
 
-public class Suzuki extends car {
-	
-	
-	   Suzuki(){
-		System.out.println("This is Suzuki car");
-		
-		}
+public class Suzuki extends Car {
+
+	public String CarName = "Suzuki";
+	public String Model = "SX4";
+	public String EnginType = "	1.5 L M15A I4";
+
+	@Override
+	public String toString() {
+		return "Suzuki [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";
+	}
 
 }

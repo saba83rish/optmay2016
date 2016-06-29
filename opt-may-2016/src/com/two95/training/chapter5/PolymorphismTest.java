@@ -8,6 +8,7 @@ public class PolymorphismTest {
 		p.pray();
 		p.sing();
 		p.work();
+		
 	}
 	//tight coupling
 	public static void goToParty(GrandChild gc) {
@@ -17,5 +18,6 @@ public class PolymorphismTest {
 	public static void goToTemple(Parent p) {
 		p.pray();
 	}
+	
 
 }

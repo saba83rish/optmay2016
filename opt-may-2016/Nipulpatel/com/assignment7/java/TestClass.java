@@ -1,7 +1,7 @@
 
 /***************************************************************
  * @author Nipul								 date:6/28/2016 
- * project:Assignment 7
+ * project:Assignment 7(Referential Polymorphism)
  * Scope :assignment :
  * Create a Vehicle->Car->Honda relationship.
                    Car->Toyota
@@ -20,27 +20,33 @@ public class TestClass {
 
 	public static void main(String[] args) {
 
-		car Ref2 = new Honda();
-		Ref2.carwash();// car wash is only for cars
+		Car Ref2 = new Honda();
+		System.out.println(Ref2.toString());
+		Ref2.carWash();// car wash is only for cars
 		Ref2.DMVRegistration(); // DMV registration is loosely coupled.
 		System.out.println("---------------------------------");
 
-		vehical Ref = new Truck();
+		Vehicle Ref = new Truck();
+		System.out.println(Ref.toString());
 		Ref.DMVRegistration();
 		System.out.println("---------------------------------");
 
-		car Ref3 = new Toyota();
-		Ref3.carwash();
+		Car Ref3 = new ToyotaDealer();
+		System.out.println(Ref3.toString());
+		Ref3.carWash();
 		Ref3.DMVRegistration();
-		System.out.println("---------------------------------");
-
-		// if you do not go to the Toyota Dealer then
-		Toyota p = new Toyota();
+		//Ref3.Toyotasell(); is not possible. throwing error.its tightly coupled.
+		// you should go to the Toyota Dealer then
+		ToyotaDealer p = new ToyotaDealer();
 		p.ToyotaSell();
-
 		System.out.println("---------------------------------");
-		Toyota p1 = new ToyotaDealer();
-		p1.ToyotaSell();
+		
+		Car Ref4 = new Suzuki();
+		System.out.println(Ref4.toString());
+		Ref4.carWash();// car wash is only for cars
+		Ref4.DMVRegistration(); // DMV registration is loosely coupled.
+		System.out.println("---------------------------------");
+
 
 	}
 
