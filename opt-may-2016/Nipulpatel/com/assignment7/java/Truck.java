@@ -3,7 +3,7 @@
  * project:Assignment 7
  * Scope :Create a Vehicle->Truck relationship. 
  * Scope change : none
- * class : Sub class of car 
+ * class : Sub class of Vehicle
  ***************************************************************/
 package com.assignment7.java;
 
