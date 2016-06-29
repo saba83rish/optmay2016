@@ -1,3 +1,10 @@
+/***************************************************************
+ * @author Nipul								 date:6/28/2016 
+ * project:Assignment 7
+ * Scope :Create a Vehicle->Truck relationship. 
+ * Scope change : none
+ * class : Sub class of car 
+ ***************************************************************/
 package com.assignment7.java;
 
 public class Truck extends Vehicle {
