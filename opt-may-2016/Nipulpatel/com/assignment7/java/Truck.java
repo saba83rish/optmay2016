@@ -13,7 +13,7 @@ public class Truck extends Vehicle {
 	}
 
 	Truck() {
-		System.out.println("this is a Truck");
+		System.out.println("This is a Truck");
 
 	}
 

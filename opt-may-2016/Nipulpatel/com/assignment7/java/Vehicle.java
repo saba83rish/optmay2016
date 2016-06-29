@@ -12,6 +12,6 @@ package com.assignment7.java;
 public class Vehicle {
 	public void DMVRegistration() {
 
-		System.out.println("your vehical is authorized for  Registration");
+		System.out.println("your Vehicle is authorized for  Registration");
 	}
 }
