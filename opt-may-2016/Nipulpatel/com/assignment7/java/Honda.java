@@ -9,9 +9,9 @@ package com.assignment7.java;
 
 public class Honda extends Car {
     
-	public String CarName = "Honda" ;
-	public String Model = "CRV" ;
-	public String EnginType = "2.4-liter i-VTEC" ;
+	public String CarName = "Honda";
+	public String Model = "CRV";
+	public String EnginType = "2.4-liter i-VTEC";
 	
 	
 	@Override

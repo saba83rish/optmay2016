@@ -19,7 +19,7 @@ public class Car extends Vehicle {
 	public String Model = "";
 	public String EnginType = "";
 
-  	public String getCarName() {
+	public String getCarName() {
 		return CarName;
 	}
 
@@ -51,6 +51,5 @@ public class Car extends Vehicle {
 	public String toString() {
 		return "Car [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";
 	}
-
 
 }

@@ -35,18 +35,18 @@ public class TestClass {
 		System.out.println(Ref3.toString());
 		Ref3.carWash();
 		Ref3.DMVRegistration();
-		//Ref3.Toyotasell(); is not possible. throwing error.its tightly coupled.
+		// Ref3.Toyotasell(); is not possible. throwing error.its tightly
+		// coupled.
 		// you should go to the Toyota Dealer then
 		ToyotaDealer p = new ToyotaDealer();
 		p.ToyotaSell();
 		System.out.println("---------------------------------");
-		
+
 		Car Ref4 = new Suzuki();
 		System.out.println(Ref4.toString());
 		Ref4.carWash();// car wash is only for cars
 		Ref4.DMVRegistration(); // DMV registration is loosely coupled.
 		System.out.println("---------------------------------");
-
 
 	}
 
