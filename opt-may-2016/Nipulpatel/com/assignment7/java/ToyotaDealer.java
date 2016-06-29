@@ -1,10 +1,15 @@
 package com.assignment7.java;
 
-public class ToyotaDealer extends Toyota {
+public class Toyota extends car {
+
+	Toyota() {
+		System.out.println("This is Toyota car");
+
+	}
 
 	public void ToyotaSell() {
 
-		System.out.println(" You can Buy Toyota cars");
+		System.out.println("Go to toyota dealer");
 	}
 
 }
