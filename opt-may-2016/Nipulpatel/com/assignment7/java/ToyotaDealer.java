@@ -13,6 +13,30 @@ public class ToyotaDealer extends Car {
 	public String Model = "RAV4";
 	public String EnginType = "2.5 L 4-cylinder";
 
+	public String getCarName() {
+		return CarName;
+	}
+
+	public void setCarName(String carName) {
+		CarName = carName;
+	}
+
+	public String getModel() {
+		return Model;
+	}
+
+	public void setModel(String model) {
+		Model = model;
+	}
+
+	public String getEnginType() {
+		return EnginType;
+	}
+
+	public void setEnginType(String enginType) {
+		EnginType = enginType;
+	}
+
 	@Override
 	public String toString() {
 		return "ToyotaDealer [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";

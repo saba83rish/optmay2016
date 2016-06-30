@@ -12,12 +12,12 @@ public class Car extends Vehicle {
 
 	public void carWash() {
 
-		System.out.println("You can go to the carwash");
+		System.out.println("You can go to the car wash");
 	}
 
-	public String CarName = "";
-	public String Model = "";
-	public String EnginType = "";
+	private String CarName = "";
+	private String Model = "";
+	private String EnginType = "";
 
 	public String getCarName() {
 		return CarName;

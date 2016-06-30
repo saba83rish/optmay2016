@@ -9,14 +9,38 @@ package com.assignment7.java;
 
 public class Truck extends Vehicle {
 
-	public String TruckName = "Chevrolet";
-	public String TruckModel = "SILVERADO 1500";
-	public String TruckEnginType = " 4.3L FlexFuel EcoTec3 V6";
+	private String TruckName = "Chevrolet";
+	private String TruckModel = "SILVERADO 1500";
+	private String TruckEnginType = " 4.3L FlexFuel EcoTec3 V6";
 
 	@Override
 	public String toString() {
-		return "Truck [TruckName=" + TruckName + ", TruckModel=" + TruckModel + ", TruckEnginType=" + TruckEnginType
+		return "Truck [TruckName=" + TruckName + ", TruckModel=" + TruckModel + ",[\n TruckEnginType=" + TruckEnginType
 				+ "]";
+	}
+
+	public String getTruckName() {
+		return TruckName;
+	}
+
+	public void setTruckName(String truckName) {
+		TruckName = truckName;
+	}
+
+	public String getTruckModel() {
+		return TruckModel;
+	}
+
+	public void setTruckModel(String truckModel) {
+		TruckModel = truckModel;
+	}
+
+	public String getTruckEnginType() {
+		return TruckEnginType;
+	}
+
+	public void setTruckEnginType(String truckEnginType) {
+		TruckEnginType = truckEnginType;
 	}
 
 	Truck() {
