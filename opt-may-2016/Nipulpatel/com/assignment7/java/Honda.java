@@ -42,8 +42,11 @@ public class Honda extends Car {
 	public void setEnginType(String enginType) {
 		EnginType = enginType;
 	}
+	@Override
+	public void carWash() {
 
-
+		System.out.println("Car Wash is Ready for Honda "+Model);
+	}
 	@Override
 	public String toString() {
 		return "Honda [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";

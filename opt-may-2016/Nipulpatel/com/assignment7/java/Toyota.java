@@ -1,18 +1,17 @@
-
 /***************************************************************
  * @author Nipul								 date:6/28/2016 
  * project:Assignment 7
- * Scope : Vehicle->Car->Suzuki relationship.
+ * Scope : Vehicle->Car->Toyota relationship.
  * Scope change : none
- * class : Sub class of car
+ * class : Sub class of car 
  ***************************************************************/
 package com.assignment7.java;
 
-public class Suzuki extends Car {
+public class Toyota extends Car {
 
-	private String CarName = "Suzuki";
-	private String Model = "SX4";
-	private String EnginType = "1.5 L M15A I4";
+	public String CarName = "Toyota";
+	public String Model = "RAV4";
+	public String EnginType = "2.5 L 4-cylinder";
 
 	public String getCarName() {
 		return CarName;
@@ -37,14 +36,14 @@ public class Suzuki extends Car {
 	public void setEnginType(String enginType) {
 		EnginType = enginType;
 	}
-	@Override
 	public void carWash() {
 
-		System.out.println("Car Wash is Ready for Suzuki "+ Model);
+		System.out.println("Car Wash is Ready for Toyota "+ Model);
 	}
 	@Override
 	public String toString() {
-		return "Suzuki [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";
+		return "ToyotaDealer [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";
 	}
 
+	
 }
