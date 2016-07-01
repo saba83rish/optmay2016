@@ -35,11 +35,6 @@ public class car {
 		return (carName);
 	}
 
-	car() {
-
-		carName = "car name is honda";
-		Model = "model name is CRV";
-		enginType = "Engine type is turbo";
-	}
+	
 
 }
