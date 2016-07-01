@@ -10,10 +10,9 @@
 package com.assignment7.java;
 
 public class Vehicle {
-	public void DmvRegistration() {
+	public void dmvRegistration() {
 
 		System.out.println("Your Vehicle is authorized for  Registration");
 	}
 
-	
 }

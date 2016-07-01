@@ -36,14 +36,15 @@ public class Toyota extends Car {
 	public void setEnginType(String enginType) {
 		EnginType = enginType;
 	}
+
 	public void carWash() {
 
-		System.out.println("Car Wash is Ready for Toyota "+ Model);
+		System.out.println("Car Wash is Ready for Toyota " + Model);
 	}
+
 	@Override
 	public String toString() {
 		return "ToyotaDealer [CarName=" + CarName + ", Model=" + Model + ", EnginType=" + EnginType + "]";
 	}
 
-	
 }

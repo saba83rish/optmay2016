@@ -40,38 +40,38 @@ public class TestClass {
 
 	public static void main(String[] args) {
 
-		Car Ref2 = new Honda();
-		System.out.println("-------------" + Ref2.getCarName() + "-----------------");
-		System.out.println(Ref2.toString());
-		Ref2.carWash();// car wash is only for cars
-		Ref2.DmvRegistration(); // DMV registration is loosely coupled.
+		Car honda = new Honda();
+		System.out.println("-------------" + honda.getCarName() + "-----------------");
+		System.out.println(honda.toString());
+		honda.carWash();// car wash is only for cars
+		honda.dmvRegistration(); // DMV registration is loosely coupled.
 
-		Car Ref3 = new Toyota();
-		System.out.println("-------------" + Ref3.getCarName() + "-----------------");
+		Car toyota = new Toyota();
+		System.out.println("-------------" + toyota.getCarName() + "-----------------");
 		// by only changing a reference(same method ,same name) we can Access
 		// different class.
-		System.out.println(Ref3.toString());
-        // Ref3.Toyotasell(); is not possible. throwing error.its tightly coupled.
+		System.out.println(toyota.toString());
+		// Ref3.Toyotasell(); is not possible. throwing error.its tightly
+		// coupled.
 		// you should go to the Toyota Dealer then.
-		ToyotaDealer p = new ToyotaDealer();
-		p.ToyotaSell(new ToyotaDealer());
-		//p.ToyotaSell(p); This will also print same result.
-		//created ToyotaSell method which invokes Sell method .
-		//Now by creating a new Toyota object it can invokes ToyotaSell method.
-		Ref3.carWash();//Ref3 is for Toyota class
-		Ref3.DmvRegistration();
-		
-		
-		Car Ref4 = new Suzuki();
-		System.out.println("-------------" + Ref4.getCarName() + "-----------------");
-		System.out.println(Ref4.toString());
-		Ref4.carWash();// car wash is only for cars
-		Ref4.DmvRegistration(); // DMV registration is loosely coupled.
+		ToyotaDealer sell = new ToyotaDealer();
+		sell.toyotaSell(new ToyotaDealer());
+		// p.ToyotaSell(p); This will also print same result.
+		// created ToyotaSell method which invokes Sell method .
+		// Now by creating a new Toyota object it can invokes ToyotaSell method.
+		toyota.carWash();// Ref3 is for Toyota class
+		toyota.dmvRegistration();
+
+		Car suzuki = new Suzuki();
+		System.out.println("-------------" + suzuki.getCarName() + "-----------------");
+		System.out.println(suzuki.toString());
+		suzuki.carWash();// car wash is only for cars
+		suzuki.dmvRegistration(); // DMV registration is loosely coupled.
 		System.out.println("-------------Truck--------------------");
 
-		Vehicle Ref = new Truck();
-		System.out.println(Ref.toString());
-		Ref.DmvRegistration();
+		Vehicle truck = new Truck();
+		System.out.println(truck.toString());
+		truck.dmvRegistration();
 		System.out.println("---------------------------------------");
 	}
 
